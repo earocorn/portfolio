@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.montserrat-title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@layer components {
+  .nav-link {
+    @apply 
+    px-3
+  hover:text-secondary
+  }
+  .title-xl {
+    @apply montserrat-title text-6xl text-light 
+  }
+  img.portrait {
+      object-fit: cover;
+      margin-right: 0;
+      max-width: 239px;
+      max-height: 400px;
+      height: auto;
+  }
+  .paragraph-info {
+    @apply montserrat-title text-2xl text-light text-wrap
+  }
+  img.portrait {
+    @apply
+    aspect-auto rounded-md hover:shadow-lg hover:shadow-secondaryLight hover:translate-y-1
+  }
+  @media (max-width: 640px) {
+    img.portrait {
+        object-fit: cover;
+        max-width: 170px;
+        max-height: 180px;
+        height: auto;
+        width: auto;
+    }
+  }
+  .list-element {
+    @apply text-light
+  }
+}
