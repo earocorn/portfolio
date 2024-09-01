@@ -18,22 +18,61 @@
   .title-xl {
     @apply montserrat-title text-6xl text-light 
   }
-  img.portrait {
+  .project-card {
+    @apply border-4 border-dark rounded-md bg-dark
+  }
+  .project-title {
+    @apply montserrat-title text-4xl sm:text-3xl text-light my-5
+  }
+  .project-body {
+    @apply montserrat-title indent-8 text-2xl sm:text-base text-light mb-5 ms-2 text-start
+  }
+  img.portrait-xl {
       object-fit: cover;
       margin-right: 0;
-      max-width: 239px;
-      max-height: 400px;
+      max-width: 335px;
+      max-height: 390px;
       height: auto;
   }
-  .paragraph-info {
-    @apply montserrat-title text-2xl text-light text-wrap
+  img.portrait-md {
+    object-fit: cover;
+    margin-right: 0;
+    max-width: 239px;
+    max-height: 400px;
+    height: auto;
   }
-  img.portrait {
+  .project-image-portrait {
+    object-fit: cover;
+    margin-right: 0;
+    max-width: 239px;
+    max-height: 400px;
+    height: auto;
+  }
+  .paragraph-info {
+    @apply montserrat-title text-2xl text-light text-wrap indent-8
+  }
+  .tech-badge {
+    @apply 
+    montserrat-title 
+    text-xl
+    lg:text-base
+    md:text-sm
+    sm:text-xs
+    text-nowrap 
+    p-2 
+    text-dark 
+    border-secondary 
+    border-2
+    rounded-3xl 
+    bg-secondaryLight
+    w-fit
+  }
+  img.shadow-round {
     @apply
     aspect-auto rounded-md hover:shadow-lg hover:shadow-secondaryLight hover:translate-y-1
   }
   @media (max-width: 640px) {
-    img.portrait {
+    img.portrait-sm {
         object-fit: cover;
         max-width: 170px;
         max-height: 180px;
