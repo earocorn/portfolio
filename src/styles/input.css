@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+html { scroll-behavior: smooth; }
+
 .montserrat-title {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -48,6 +50,13 @@
     max-height: 400px;
     height: auto;
   }
+  .project-image-landscape {
+    object-fit: cover;
+    margin-right: 0;
+    width: auto;
+    max-width: 481px;
+    max-height: 264px;
+  }
   .paragraph-info {
     @apply montserrat-title text-2xl text-light text-wrap indent-8
   }
@@ -67,6 +76,9 @@
     bg-secondaryLight
     w-fit
   }
+  .github-button {
+    @apply montserrat-title text-lg text-dark bg-light rounded-md p-2 my-5 shadow-xl animate-bounce
+  }
   img.shadow-round {
     @apply
     aspect-auto rounded-md hover:shadow-lg hover:shadow-secondaryLight hover:translate-y-1
@@ -78,6 +90,13 @@
         max-height: 180px;
         height: auto;
         width: auto;
+    }
+    .project-image-landscape {
+      object-fit: cover;
+      max-width: 363px;
+      max-height: 199px;
+      height: auto;
+      width: auto;
     }
   }
   .list-element {
